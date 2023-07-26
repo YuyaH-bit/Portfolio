@@ -15,12 +15,40 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
     <div id="app">
-      <div class="test">
-        <router-view />
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/profile">Profile</router-link> |
+        <!-- ログアウト処理をするためのリンク -->
+        <a @click="logout()" v-if="$store.getters.loggedIn">Logout</a>
+        <!-- ログインページに遷移するためのリンク -->
+        <router-link
+          :to="'/login?redirect=' + $route.fullPath"
+          v-else-if="$route.path !== '/login'"
+        >
+          Login
+        </router-link>
+        <!-- 強制的にログインページに飛ばされた際に表示するメッセージ -->
+        <div v-if="$route.query.message">ログイン認証が必要なページです。</div>
       </div>
     </div>
   </main>
 </template>
+
+<script>
+  export default {
+    methods: {
+      logout () {
+        this.$store.commit('setUserId', '')
+        if (this.$route.meta.requiresAuth) {
+          this.$router.push({
+            path: '/login',
+            query: { redirect: this.$route.fulPath }
+          })
+        }
+      }
+    }
+  }
+</script>
 
 <style scoped>
 header {
