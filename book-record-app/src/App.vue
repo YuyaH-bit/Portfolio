@@ -42,7 +42,7 @@ import TheWelcome from './components/TheWelcome.vue'
         if (this.$route.meta.requiresAuth) {
           this.$router.push({
             path: '/login',
-            query: { redirect: this.$route.fulPath }
+            query: { redirect: this.$route.fullPath }
           })
         }
       }

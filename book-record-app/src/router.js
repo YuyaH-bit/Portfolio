@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './components/Home.vue'
-import Test from './components/Test.vue'
-import store from './store'
+import store from './store' //ログイン情報を参照するためにインポート
 
 Vue.use(Router)
 
@@ -24,7 +23,7 @@ const router = new Router({
   ]
 })
 
-rooter.beforeEach((to, from, next) => {
+router.beforeEach((to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
     if (!store.getters.loggedIn) {
       next({
@@ -42,9 +41,11 @@ rooter.beforeEach((to, from, next) => {
   }
 })
 
-export default new Router({
-  routes: [
-    { path: '/', component: Home },
-    { path: '/test', component: Test }
-  ]
-})
+export default router
+
+// export default new Router({
+//   routes: [
+//     { path: '/', component: Home },
+//     { path: '/test', component: Test }
+//   ]
+// })
