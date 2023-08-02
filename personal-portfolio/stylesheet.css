@@ -1,0 +1,13 @@
+html {
+  font-size: 1rem;
+}
+body {
+  color: #fff;
+  background-color: #121221;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
