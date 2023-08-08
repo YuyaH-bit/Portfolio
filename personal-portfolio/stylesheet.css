@@ -5,9 +5,50 @@ body {
   color: #fff;
   background-color: #121221;
 }
-
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
 .wrapper {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+
+/*-----------------------
+  HEADER 
+ -----------------------*/
+.site-title {
+  position: fixed;
+  display: block;
+  z-index: 10;
+  fill: #fff;
+  top: 30px;
+  left: 30px;
+  line-height: 1px;
+}
+.site-title svg{
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+#navi {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+}
+#navi ul {
+  display: flex;
+}
+#navi ul li:nth-child(2) {
+  margin: 0 20px 0 10px;
+}
+#navi ul li svg{
+  fill: #fff;
 }
