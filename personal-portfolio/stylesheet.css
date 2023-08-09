@@ -3,6 +3,8 @@ html {
 }
 body {
   color: #fff;
+  font-family: 'Lora', serif;
+  font-family: 'Source Sans 3', sans-serif;
   background-color: #121221;
 }
 img {
@@ -17,7 +19,11 @@ li {
   width: 100%;
   margin: 0 auto;
 }
-
+.section-title {
+  display: inline-block;
+  font-size: 2.75rem;
+  border-bottom: 5px solid blue;
+}
 
 /*-----------------------
   HEADER 
@@ -32,8 +38,8 @@ li {
   line-height: 1px;
 }
 .site-title svg{
-  width: 120px;
-  height: 120px;
+  width: 98px;
+  height: 98px;
   background-color: #fff;
   border-radius: 50%;
 }
@@ -45,10 +51,70 @@ li {
 }
 #navi ul {
   display: flex;
-}
-#navi ul li:nth-child(2) {
-  margin: 0 20px 0 10px;
+  gap: 20px;
 }
 #navi ul li svg{
   fill: #fff;
+}
+#navi ul li:last-child {
+  width: 98px;
+}
+
+/*------------------------ 
+  MAIN
+-------------------------*/
+
+.two-columns {
+display: flex;
+justify-content: space-between;
+padding-top: 200px;
+height: 100vh;
+}
+
+/*------------------------ 
+ABOUT
+-------------------------*/
+#about {
+  width: 450px;
+  height: 500px;
+  text-align: left;
+  margin-top: 50px;
+}
+#about .message-content {
+  margin-top: 25px;
+  padding-left: 20px;
+  border-left: 3px solid gray;
+  font-size: 1.15rem;
+}
+#about .background {
+  margin-top: 20px;
+}
+
+/*------------------------ 
+WORK
+-------------------------*/
+#work {
+  text-align: center;
+}
+#work .work-content {
+  height: 100vh;
+}
+/*------------------------ 
+SKILL
+-------------------------*/
+#skill {
+  text-align: center;
+}
+#skill .skill-content {
+  height: 100vh;
+}
+/*------------------------ 
+  CONTACT
+-------------------------*/
+#contact {
+  text-align: center;
+}
+#contact .contact-space {
+  height: 100vh;
+  background-color:aliceblue;
 }
