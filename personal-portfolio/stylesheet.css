@@ -11,6 +11,9 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
+p {
+  font-size: 1.15rem;
+}
 li {
   list-style: none;
 }
@@ -22,7 +25,7 @@ li {
 .section-title {
   display: inline-block;
   font-size: 2.75rem;
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid rgb(49,104,247);
 }
 
 /*-----------------------
@@ -97,16 +100,59 @@ WORK
   text-align: center;
 }
 #work .work-content {
-  height: 100vh;
+  /* height: 100vh; */
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 /*------------------------ 
 SKILL
 -------------------------*/
 #skill {
   text-align: center;
-}
-#skill .skill-content {
   height: 100vh;
+}
+.skill-contents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.skill-one {
+  width: 50%;
+  position: relative;
+}
+.skill-one:first-child {
+  margin-bottom: 50px;
+}
+.skill-title span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+.skill-title  {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.skill-one:nth-child(-n+2) .skill-description {
+  margin-top: 60px;
+}
+.skill-one:nth-child(n+3) .skill-description {
+  margin-top: 50px;
+}
+.image-copyright {
+  font-size: 0.5rem;
+  color: grey;
+  display: inline-block;
+  position: absolute;
+}
+.skill-one:nth-child(-n+2) .image-copyright {
+  top: 100px;
+  left: 90px;
+}
+.skill-one:nth-child(n+3) .image-copyright {
+  top: 85px;
+  left: 85px;
 }
 /*------------------------ 
   CONTACT
@@ -116,5 +162,8 @@ SKILL
 }
 #contact .contact-space {
   height: 100vh;
-  background-color:aliceblue;
+
 }
+/*------------------------ 
+  FOOTER
+-------------------------*/
