@@ -375,8 +375,15 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
     </section>
     <section id="contact">
       <h2 class="section-title">Contact</h2>
-      <div class="contact-space">
 
+      <div class="contact-space">
+        <form class="contact-form">
+          <input type="text" id="name" placeholder="Full name"><br>
+          <input type="email" id="email" placeholder="Email"><br>
+          <input type="text" id="subject" placeholder="Subject"><br>
+          <textarea id="message" placeholder="message" cols="30" rows="10"></textarea><br>
+          <input type="submit" id="submit" placeholder="Send Message" value="Submit">
+        </form> 
       </div>
     </section>
   </main>
@@ -384,5 +391,6 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
 
   </footer>
   <script src="./main.js"></script>
+  <script src="./email-contact/public/js/app.js"></script>
 </body>
 </html>

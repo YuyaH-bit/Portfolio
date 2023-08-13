@@ -162,7 +162,34 @@ SKILL
 }
 #contact .contact-space {
   height: 100vh;
-
+  display: flex;
+  justify-content: end;;
+}
+#contact .contact-space form{
+  width: 50%;
+  margin-top: 100px;
+}
+input, 
+textarea {
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom: 1px solid rgb(49,104,247);
+  color: #fff;
+  line-height: 1.45em;
+  
+}
+textarea {
+  border: 1px solid rgb(49,104,247);
+}
+#submit {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  color: #121221;
+  cursor: pointer;
+}
+#submit:hover {
+  opacity: .6;
 }
 /*------------------------ 
   FOOTER
