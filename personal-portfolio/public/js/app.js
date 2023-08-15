@@ -13,7 +13,7 @@ contactForm.addEventListener('submit', (e)=>{
     subject: subject.value,
     message: message.value
   }
-  
+  //xmlhttprequestは古いので、fetchAPIに替える
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "/");
   xhr.setRequestHeader('content-type', 'application/json');
