@@ -9,7 +9,7 @@
   <!-- Google font: Lora -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+3:wght@400;700&   display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header id="header">
@@ -247,9 +247,9 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
           </p>
           <p class="image-copyright">&copy; Vector Stall</p>
           <p class="skill-description">
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext
           </p>
         </div>
         <div class="skill-one">
@@ -261,9 +261,9 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
           </p>
           <p class="image-copyright">&copy; Freepik</p>
           <p class="skill-description">
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext
           </p>
         </div> 
         <div class="skill-one">
@@ -352,9 +352,9 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
           </p>
           <p class="image-copyright">&copy; Freepik</p>
           <p class="skill-description">
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext
           </p>          
         </div>
         <div class="skill-one">
@@ -366,9 +366,9 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
           </p>
           <p class="image-copyright">&copy; Smashicons</p>
           <p class="skill-description">
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext<br>
-            TexttexttextTexttexttextTexttexttextTexttexttextTexttexttext
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext<br>
+            TexttexttextTexttexttextTexttexttextTexttexttext
           </p>
         </div>
       </div>
@@ -377,11 +377,11 @@ l38 -22 12 22 c6 12 12 63 12 112 l1 90 -162 3 -163 2 0 -89z"/>
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-space">
-        <form class="contact-form">
-          <input type="text" id="name" placeholder="Full name"><br>
-          <input type="email" id="email" placeholder="Email"><br>
-          <input type="text" id="subject" placeholder="Subject"><br>
-          <textarea id="message" placeholder="message" cols="30" rows="10"></textarea><br>
+        <form class="contact-form" action="/post" method="POST">
+          <input class="name" type="text" placeholder="Full name" required /><br>
+          <input class="email" type="email" placeholder="Email" required /><br>
+          <input class="subject" type="text" placeholder="Subject" required ><br>
+          <textarea class="message" placeholder="message" cols="30" rows="10"></textarea><br>
           <input type="submit" id="submit" placeholder="Send Message" value="Submit">
         </form> 
       </div>

@@ -1,17 +1,6 @@
 //target要素を指定
 const target = document.getElementById('navi');
 
-//マウスが要素上に入った時
-// target.addEventListener('mouseover', () => {
-//   target.style.borderBottom = '5px solid blue';
-//   target.style.transition = '0.5s';
-// }, false);
-
-//マウスが要素上から離れた時
-// target.addEventListener('mouseleave', () => {
-//   target.style.borderBottom = 'none';
-// }, false);
-
 let elems = document.getElementsByClassName('hover_blueLine');
 
 for (let i = 0; i < elems.length; i++){
